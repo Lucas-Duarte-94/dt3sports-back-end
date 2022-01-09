@@ -13,7 +13,7 @@ router.post('/register', (req: Request, res: Response) => {
     return res.json({ status: true })
 })
 
-router.post('/product', ProductController.addChairColorImage)
+router.post('/product', ProductController.addProduct)
 
 router.get('/product', ProductController.getImages)
 router.get('/price', ProductController.getPrice)
